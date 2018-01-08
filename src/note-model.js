@@ -1,4 +1,3 @@
-
 (function(exports) {
   function Note(string) {
     this.text = string;
