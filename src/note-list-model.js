@@ -1,12 +1,11 @@
 (function(exports){
 
   function List() {
-    this.notes = "hello";
-
+    this.notes = [];
   }
 
   List.prototype.addNote = function(note){
-    this.notes.push(note)
+    this.notes.push(note);
   }
 
   exports.List = List;
