@@ -8,7 +8,7 @@
    string = ""
    for (var i=0; i < this.list.notes.length; i ++){
 
-     string += "<li><div>" + this.list.notes[i].text + "</div></li>";
+     string += "<li><div>" + this.list.notes[i] + "</div></li>";
    };
    return "<ul>" + string + "</ul>"
   };
