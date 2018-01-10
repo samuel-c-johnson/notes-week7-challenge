@@ -1,8 +1,12 @@
-function(exports){
-  function Controller(){
-    var elem = document.getElementById("app");
-    console.log(elem)
-  }
-    exports.Controller = Controller;
-  
-})(this);
+window.onload = function(){
+  document.getElementById("app").innerHTML = "What up Lan?";
+  // elem = "howdy";
+  // console.log(elem)
+};
+// function(){
+  // function Controller(){
+
+  // }
+    // exports.Controller = Controller;
+
+// })(this);
