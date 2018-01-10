@@ -5,12 +5,16 @@
   }
 
   View.prototype.returnHTML = function () {
-   string = ""
-   for (var i=0; i < this.list.notes.length; i ++){
+    // console.log('view');
+    // console.log(this.list);
+    console.log(this.list.notes);
 
-     string += "<li><div>" + this.list.notes[i] + "</div></li>";
+   var text = []
+   for (var i=0; i < this.list.notes.length; i ++){
+     text.push(this.list.notes[i].text)
    };
-   return "<ul>" + string + "</ul>"
+   // console.log(text)
+   return "<ul><li>" + text.join("</li><li>") + "</li></ul>"
   };
 
 
