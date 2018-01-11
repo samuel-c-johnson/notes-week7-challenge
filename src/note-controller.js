@@ -19,7 +19,7 @@
 
   // window.onload = function(){
   controller = new Controller()
-  console.log(controller)
+
   // controller.getHTML()
 //
 // };
