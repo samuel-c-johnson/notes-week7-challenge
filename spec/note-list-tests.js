@@ -6,7 +6,7 @@ function testReturnList(){
 
   list.addNote(note);
 
-  assert.isTrue(list.notes[0] === note);
+  assert.isTrue(list.notes[0] === note, "Returns list of notes");
 
 };
 
@@ -22,8 +22,8 @@ function testReturnNotes(){
   list.addNote(note);
   list.addNote(note2);
 
-  assert.isTrue(list.notes[0] === note);
-  assert.isTrue(list.notes[1] === note2);
+  assert.isTrue(list.notes[0] === note, "Returns the notes");
+  assert.isTrue(list.notes[1] === note2, "Returns the notes");
 
 };
 
@@ -39,8 +39,8 @@ function testReturnNotesText(){
   list.addNote(note);
   list.addNote(note2);
 
-  assert.isTrue(note.text === "Hello");
-  assert.isTrue(note2.text === "Val");
+  assert.isTrue(note.text === "Hello", "Returns the text in a note");
+  assert.isTrue(note2.text === "Val", "Returns the text in a note");
 
 };
 
