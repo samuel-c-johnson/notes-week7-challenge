@@ -8,6 +8,6 @@ function testForReturnHTMLNote(){
   list.addNote(note2);
 
 
-  assert.isTrue(view.returnHTML() === "<ul><li>12345678912345678912</li><li>I'm good</li></ul>", "Convert one note to a html");
+  assert.isTrue(view.returnHTML() === "<li><a href=\"#note8>12345678912345678912</a></li><li><a href=\"#note9>I'm good</a></li>", "Convert one note to a html");
 };
 testForReturnHTMLNote();

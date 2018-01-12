@@ -9,13 +9,9 @@
     this.notes.push(note);
   }
 
-  // List.prototype.createNote = function(notetext){
-  //   note = new Note(notetext, this.id)
-  //   // list = new List
-  //   console.log(note)
-  //   List.addNote(note)
-  //   this.id += 1
-  // }
+  List.prototype.returnNoteList = function(){
+    return this.notes
+  }
 
   exports.List = List;
 
